@@ -1,0 +1,53 @@
+{
+  "name": "ip-geo-cn",
+  "version": "1.0.1",
+  "description": "ip地址转地理位置，以中文方式显示,纯真网络2022年04月20日IP数据,共有数据:529985条",
+  "keywords": [
+    "geo",
+    "geoip",
+    "ip",
+    "ipv4",
+    "ipv6",
+    "geolookup",
+    "maxmind",
+    "geolite"
+  ],
+  "bin": {
+    "qqwry": "bin/qqwry",
+    "lib-qqwry": "bin/qqwry"
+  },
+  "bundleDependencies": false,
+  "main": "lib/qqwry",
+  "scripts": {
+    "test": "node ./test/test_v.js",
+    "demo": "node ./test/demo.js"
+  },
+  "author": "ayumi QQ:44784009",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "chalk": "^2.4.2",
+    "commander": "^2.19.0",
+    "gbk.js": "^0.2.0",
+    "progress": "^2.0.3",
+    "stream.pipeline-shim": "^1.0.4",
+    "to-regex": "^3.0.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.4"
+  },
+  "engines": {
+    "node": ">=5.10.0"
+  },
+  "files": [
+    "lib/",
+    "data/",
+    "test/",
+    "scripts/"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ayuday/ip-geo-cn.git"
+  }
+}
